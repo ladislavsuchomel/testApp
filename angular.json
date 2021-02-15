@@ -171,6 +171,61 @@
           }
         }
       }
+    },
+    "test-app-be": {
+      "root": "apps/test-app-be",
+      "sourceRoot": "apps/test-app-be/src",
+      "projectType": "application",
+      "prefix": "test-app-be",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/test-app-be",
+            "main": "apps/test-app-be/src/main.ts",
+            "tsConfig": "apps/test-app-be/tsconfig.app.json",
+            "assets": ["apps/test-app-be/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/test-app-be/src/environments/environment.ts",
+                  "with": "apps/test-app-be/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "test-app-be:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/test-app-be/tsconfig.app.json",
+              "apps/test-app-be/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/test-app-be/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/test-app-be"],
+          "options": {
+            "jestConfig": "apps/test-app-be/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

@@ -17,6 +17,7 @@
   },
   "projects": {
     "test-app-fe": { "tags": [] },
-    "test-app-fe-e2e": { "tags": [], "implicitDependencies": ["test-app-fe"] }
+    "test-app-fe-e2e": { "tags": [], "implicitDependencies": ["test-app-fe"] },
+    "test-app-be": { "tags": [] }
   }
 }
