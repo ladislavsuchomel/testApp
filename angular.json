@@ -278,6 +278,32 @@
           }
         }
       }
+    },
+    "features-math": {
+      "projectType": "library",
+      "root": "libs/features/math",
+      "sourceRoot": "libs/features/math/src",
+      "prefix": "test-app",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/features/math/tsconfig.lib.json",
+              "libs/features/math/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/features/math/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/features/math"],
+          "options": {
+            "jestConfig": "libs/features/math/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

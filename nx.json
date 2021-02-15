@@ -20,6 +20,7 @@
     "test-app-fe-e2e": { "tags": [], "implicitDependencies": ["test-app-fe"] },
     "test-app-be": { "tags": [] },
     "ui": { "tags": [] },
-    "shared": { "tags": [] }
+    "shared": { "tags": [] },
+    "features-math": { "tags": [] }
   }
 }

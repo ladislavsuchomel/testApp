@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@test-app/ui": ["libs/ui/src/index.ts"],
-      "@test-app/shared": ["libs/shared/src/index.ts"]
+      "@test-app/shared": ["libs/shared/src/index.ts"],
+      "@test-app/features/math": ["libs/features/math/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
