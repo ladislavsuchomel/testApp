@@ -1,0 +1,5 @@
+@import 'variables.stylesheet';
+
+@media all and (max-width: $containerSize){
+  @content;
+}

@@ -1,0 +1,22 @@
+@import "../../../../../apps/test-app-fe/src/assets/styles/variables.stylesheet";
+
+:host{
+  display: block;
+  min-height: 100vh;
+  margin: 0 auto;
+  color: $white;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.facts_area {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}

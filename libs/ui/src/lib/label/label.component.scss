@@ -1,0 +1,8 @@
+@import "../../../../../apps/test-app-fe/src/assets/styles/variables.stylesheet";
+:host {
+  padding: 16px 32px;
+  background: $paleYellow;
+  font-size: 48px;
+  font-weight: 500;
+  color: $text;
+}

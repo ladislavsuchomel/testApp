@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import "apps/test-app-fe/src/assets/styles/font.stylesheet";
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+}

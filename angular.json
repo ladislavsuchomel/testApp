@@ -64,6 +64,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/assets/styles"
+              ]
+            },
             "outputPath": "dist/apps/test-app-fe",
             "index": "apps/test-app-fe/src/index.html",
             "main": "apps/test-app-fe/src/main.ts",

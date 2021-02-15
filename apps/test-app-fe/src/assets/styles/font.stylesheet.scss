@@ -1,0 +1,17 @@
+@import "variables.stylesheet";
+
+h1 {
+  margin: 0 0 32px;
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 32px;
+  color: $paleRed;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 32px;
+  color: $text;
+}

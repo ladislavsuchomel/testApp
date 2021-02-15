@@ -1,0 +1,13 @@
+@import "../../../../../apps/test-app-fe/src/assets/styles/variables.stylesheet";
+
+input {
+  background: $paleYellow;
+  border: none;
+  padding: 8px;
+  outline: none;
+  font-family: 'Roboto';
+}
+
+.label {
+  text-transform: uppercase;
+}
